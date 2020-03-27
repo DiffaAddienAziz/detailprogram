@@ -16,7 +16,9 @@ void cek(){
 	int *pointNilai = arrayNilai;
         }
 int main(){
-int a;
+	cout<<"----------------------------------"<<endl;
+	cout<<" Pemisah dan Jumlah GanjiGenapPrima"<<endl;
+	cout<<"----------------------------------\n"<<endl<<endl;
 
 cek();
 

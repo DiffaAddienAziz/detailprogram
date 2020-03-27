@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+void akhir(int *);
+
 void cek(){
 	int ganjil= 0, genap = 0, prima= 0, cekPrima;
 	int x=1, y=1, z=1, masukan;
@@ -74,11 +76,18 @@ void cek(){
         }
 
 int main(){
+        int a=0;
 	cout<<"----------------------------------"<<endl;
 	cout<<" Pemisah dan Jumlah Ganji Genap Prima"<<endl;
 	cout<<"----------------------------------\n"<<endl<<endl;
 
 cek();
+akhir(&a);
 
 return 0;
+}
+
+void akhir(int *a){
+if(*a==0){
+cout<<"\nProgram Telah Berakhir"<<endl;}
 }

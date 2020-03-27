@@ -75,7 +75,7 @@ void cek(){
 
 int main(){
 	cout<<"----------------------------------"<<endl;
-	cout<<" Pemisah dan Jumlah GanjiGenapPrima"<<endl;
+	cout<<" Pemisah dan Jumlah Ganji Genap Prima"<<endl;
 	cout<<"----------------------------------\n"<<endl<<endl;
 
 cek();

@@ -14,7 +14,65 @@ void cek(){
 	int *pointGenap = arrayGenap;
 	int *pointPrima = arrayPrima;
 	int *pointNilai = arrayNilai;
+
+        	for (int n=0; n<masukan; n++){
+		cout<<"input "<<n+1<<" = ";
+		cin>>*(pointNilai+1);
+		
+		cekPrima = 0;
+		for(int a=2; a<*(pointNilai+1); a++){
+			if(*(pointNilai+1) % a == 0){
+			cekPrima = 1;
+			}
+		}
+		
+		if(*(pointNilai+1) % 2 !=0){
+			ganjil = ganjil + 1;
+			*(pointGanjil+x)=*(pointNilai+1);
+			x++;
+			
+		}
+		
+        if(cekPrima == 0){
+        	prima = prima + 1;
+        	*(pointPrima+y)=*(pointNilai+1);
+        	y++;
         }
+        
+		if(*(pointNilai+1) % 2 == 0){
+			genap = genap + 1;
+			*(pointGenap+z)=*(pointNilai+1);
+			z++;
+			}	
+		}
+	 
+	 cout<<endl<<endl;
+	 
+	 cout<<"-----------------------------"<<endl;
+	 cout<<"Bilangan Ganjil"<<endl;
+	 cout<<"----"<<endl;
+	  	  for (int i=1; i<=ganjil; i++){
+ cout<<*(pointGanjil+i)<<endl;
+}
+	  cout<<"Jumlah = "<<ganjil<<endl;
+	    cout<<"-----------------------------"<<endl;
+	    cout<<"Bilangan Genap"<<endl;
+	    cout<<"----"<<endl;
+	  	  for (int o=1; o<=genap; o++){
+ cout<<*(pointGenap+o)<<endl;
+}
+	  cout<<"Jumlah = "<<genap<<endl;
+	    cout<<"-----------------------------"<<endl;
+	    cout<<"Bilangan Prima"<<endl;
+	    cout<<"----"<<endl;
+	  	  for (int p=1; p<=prima; p++){
+ cout<<*(pointPrima+p)<<endl;
+}
+	  cout<<"Jumlah = "<<prima<<endl;
+	  cout<<"-----------------------------";
+
+        }
+
 int main(){
 	cout<<"----------------------------------"<<endl;
 	cout<<" Pemisah dan Jumlah GanjiGenapPrima"<<endl;

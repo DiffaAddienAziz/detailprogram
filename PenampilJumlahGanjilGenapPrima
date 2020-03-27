@@ -1,5 +1,6 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+
 void cek(){
 	int ganjil= 0, genap = 0, prima= 0, cekPrima;
 	int x=1, y=1, z=1, masukan;
@@ -13,8 +14,11 @@ void cek(){
 	int *pointGenap = arrayGenap;
 	int *pointPrima = arrayPrima;
 	int *pointNilai = arrayNilai;
+        }
 int main(){
 int a;
+
+cek();
 
 return 0;
 }
